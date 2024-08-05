@@ -49,10 +49,10 @@ jobs:
       - name: Notify Slack on Success
         if: success()
         run: |
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"Build succeeded for commit: ${{ github.sha }}"}' $SLACK_WEBHOOK_URL
+          curl -X POST -H 'Content-type: application/json' --data '{"text":"Build succeeded for commit to Docker Hub: ${{ github.sha }}"}' $SLACK_WEBHOOK_URL
 
       - name: Notify Slack on Failure
         if: failure()
         run: |
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"Build failed for commit: ${{ github.sha }}"}' $SLACK_WEBHOOK_URL
+          curl -X POST -H 'Content-type: application/json' --data '{"text":"Build failed for commit to Docker Hub: ${{ github.sha }}"}' $SLACK_WEBHOOK_URL
 
