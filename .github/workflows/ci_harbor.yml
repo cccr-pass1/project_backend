@@ -1,4 +1,4 @@
-name: DevSecOps Pipeline for Spring Backend
+name: Git Actions to Harbor 
 run-name: ${{ github.actor }} is running DevSecOps pipeline for Spring Backend 
 
 on:
