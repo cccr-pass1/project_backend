@@ -12,6 +12,7 @@ on:
 env:
   IMAGE_NAME: nuitciel/cccr_project1_backend
   REGISTRY: docker.io
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
 jobs:
   build-and-push:
@@ -44,4 +45,14 @@ jobs:
           ./gradlew bootBuildImage -x test --imageName=$IMAGE_NAME:${{ github.sha }}
           echo $DOCKER_PASSWORD | docker login $REGISTRY -u $DOCKER_USER --password-stdin
           docker push $IMAGE_NAME:${{ github.sha }}
+
+      - name: Notify Slack on Success
+        if: success()
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data '{"text":"Build succeeded for commit: ${{ github.sha }}"}' $SLACK_WEBHOOK_URL
+
+      - name: Notify Slack on Failure
+        if: failure()
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data '{"text":"Build failed for commit: ${{ github.sha }}"}' $SLACK_WEBHOOK_URL
 
