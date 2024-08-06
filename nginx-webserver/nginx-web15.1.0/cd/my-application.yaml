@@ -14,7 +14,7 @@ spec:
     helm:
       valueFiles:
       - ci/my-values.yaml
-    path: nginx-webserver/nginx-15.1.0
+    path: nginx-webserver/nginx-web15.1.0
     repoURL: https://github.com/cccr-pass1/project_backend.git
     targetRevision: HEAD
   syncPolicy:
