@@ -33,6 +33,7 @@
 ## 0806
 1. Sonarqube & ZAP scanning 진행 중
 2. ArgoCD & Helm 배포 완료
+3. Scale Replicas 실행 시 설정 해둔 파드 수 유지하는거 확인 완료 
    
 ### 참고 자료 
 [ArgoCD & Helm 배포](https://jennifersoft.com/ko/blog/kubernetes/2023-08-30-jennifer-kubernetes-3/)
