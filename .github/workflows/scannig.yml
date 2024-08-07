@@ -60,7 +60,7 @@ jobs:
           curl -X POST -H 'Content-type: application/json' --data '{"text":"Build failed for commit to Docker Hub: ${{ github.sha }}"}' $SLACK_WEBHOOK_URL
 
   scan:
-    needs: [build-and-push, zap-scan]
+    needs: [build-and-push]
     runs-on: ubuntu-22.04
     steps:
       - name: Pull Docker Image
@@ -83,7 +83,7 @@ jobs:
           sarif_file: 'trivy-results.sarif'
 
   zap-scan:
-    needs: build-and-push
+    needs: [build-and-push, scan]
     runs-on: ubuntu-22.04
     steps:
       - name: Run Spring Boot application
