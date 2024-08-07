@@ -64,11 +64,11 @@ jobs:
     runs-on: ubuntu-22.04
     permissions:
       actions: read  
-      contents: write
+      contents: read
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Docker Login
         env:
@@ -106,7 +106,7 @@ jobs:
       - name: Run OWASP ZAP full scan
         uses: zaproxy/action-full-scan@v0.10.0
         with:
-          target: "http://localhost:8080"
+          target: "http://localhost:8081"
           cmd_options: '-a'
 
       - name: Evaluate ZAP Results
