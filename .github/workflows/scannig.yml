@@ -84,7 +84,7 @@ jobs:
           severity: 'CRITICAL,HIGH'
 
       - name: Upload Trivy scan results to GitHub Security tab
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: 'trivy-results.sarif'
 
@@ -94,7 +94,7 @@ jobs:
     steps:
       - name: Run Spring Boot application
         run: |
-          docker run -d -p 8080:8080 --name backendzapscan ${{ env.IMAGE_NAME }}:${{ github.sha }}
+          docker run -d -p 8081:8081 --name backendzapscan ${{ env.IMAGE_NAME }}:${{ github.sha }}
           
       - name: Run OWASP ZAP full scan
         uses: zaproxy/action-full-scan@v0.10.0
