@@ -62,8 +62,6 @@ jobs:
   scan:
     needs: [build-and-push]
     runs-on: ubuntu-22.04
-    permissions:
-      actions: read
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
