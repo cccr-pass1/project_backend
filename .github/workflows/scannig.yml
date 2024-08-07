@@ -64,8 +64,11 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Docker Login
+        env:
+          DOCKER_USER: ${{ secrets.DOCKER_USER }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         run: |
-          echo ${{ secrets.DOCKER_PASSWORD }} | docker login ${{ env.REGISTRY }} -u ${{ secrets.DOCKER_USER }} --password-stdin
+          echo $DOCKER_PASSWORD | docker login $REGISTRY -u $DOCKER_USER --password-stdin
       - name: Pull Docker Image
         run: |
           docker pull ${{ env.IMAGE_NAME }}:${{ github.sha }}
