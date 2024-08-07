@@ -63,6 +63,9 @@ jobs:
     needs: [build-and-push]
     runs-on: ubuntu-22.04
     steps:
+      - name: Docker Login
+        run: |
+          echo ${{ secrets.DOCKER_PASSWORD }} | docker login ${{ env.REGISTRY }} -u ${{ secrets.DOCKER_USER }} --password-stdin
       - name: Pull Docker Image
         run: |
           docker pull ${{ env.IMAGE_NAME }}:${{ github.sha }}
