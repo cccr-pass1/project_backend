@@ -100,6 +100,17 @@ jobs:
     needs: [build-and-push, scan]
     runs-on: ubuntu-22.04
     steps:
+      - name: Docker Login
+        env:
+          DOCKER_USER: ${{ secrets.DOCKER_USER }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        run: |
+          echo $DOCKER_PASSWORD | docker login $REGISTRY -u $DOCKER_USER --password-stdin
+
+      - name: Pull Docker Image
+        run: |
+          docker pull ${{ env.IMAGE_NAME }}:${{ github.sha }}
+
       - name: Run Spring Boot application
         run: |
           docker run -d -p 8081:8081 --name backendzapscan ${{ env.IMAGE_NAME }}:${{ github.sha }}
