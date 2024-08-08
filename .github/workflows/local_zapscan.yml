@@ -1,5 +1,5 @@
-name: Scanning & Git Actions to Docker Hub
-run-name: ${{ github.actor }} is running DevSecOps pipeline for Spring Backend 
+name: Local ZAP Scan & Git Actions to Docker Hub
+run-name: ${{ github.actor }} is testing Local ZAP Scan for Spring Backend 
 
 on:
   push:
@@ -102,7 +102,7 @@ jobs:
     steps:
       - name: Run Spring Boot application
         run: |
-          docker run -d -p 8081:8081 --name backendzapscan ${{ env.IMAGE_NAME }}:latest
+          docker run -d -p 8081:8081 ${{ env.IMAGE_NAME }}:latest
           
       - name: Run OWASP ZAP full scan
         uses: zaproxy/action-full-scan@v0.10.0
