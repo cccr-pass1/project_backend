@@ -24,9 +24,8 @@
    - 데이터와 사용자의 신뢰를 보장하고 있는지
 
 ### Software Quality
-<p align="center">
 ![Screenshot from 2024-08-09 12-29-28](https://github.com/user-attachments/assets/1ff78534-05d2-4d4e-9b93-d7652484b4ae)
-</p>
+
 
 [SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/clean-code/software-qualities/)
 
