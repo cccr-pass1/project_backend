@@ -52,6 +52,11 @@ jobs:
           chmod +x cosign-linux-amd64
           sudo mv cosign-linux-amd64 /usr/local/bin/cosign
 
+      - name: Download Cosign Key
+        env:
+          COSIGN_KEY: ${{ secrets.COSIGN_KEY }}
+        run: echo "$COSIGN_KEY" > cosign.key
+
       - name: Sign Docker Image with Cosign
         env:
           COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
