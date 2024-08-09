@@ -100,5 +100,5 @@
 - **FIXED VERSION**
    - 수정된 버전
 
-**TITLE**
+- **TITLE**
    - 간단 설명 
