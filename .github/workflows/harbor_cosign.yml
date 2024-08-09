@@ -61,7 +61,7 @@ jobs:
         env:
           COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
         run: |
-          cosign sign --key cosign.key $IMAGE_NAME:${{ github.sha }}
+          yes | cosign sign --key cosign.key $IMAGE_NAME:${{ github.sha }}
 
       - name: Notify Slack on Success
         if: success()
