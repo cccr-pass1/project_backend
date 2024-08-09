@@ -65,7 +65,7 @@
 
 ---
 
-### Issues
+### 1-4. Issues
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ca8cc26b-c4be-46de-bc50-d4e9b444474d" alt="Issues Screenshot">
@@ -73,11 +73,17 @@
 
 ---
 
+
+
 ## 2. CVE
 - [CVE 개념](https://www.redhat.com/ko/topics/security/what-is-cve)
 - [US Cert](https://www.cisa.gov/news-events/bulletins)
 
+
+
 ---
+
+
 
 ## 3. Trivy 
 ### 3-1. Install Trivy
@@ -121,5 +127,8 @@
 - **TITLE**
    - 간단 설명 
 
+
+
 ---
+
 
