@@ -1,41 +1,146 @@
-# Project Backend
+# Backend DevSecOps
 
-## ~ 0801
-1. Backend Build Gradle
-2. Docker Image & Container : Build Gradle
-3. Push Image to Docker HUB
+## 0. Architecture
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/309143af-3867-41f1-8088-ba77e02e6638" alt="architecture1"><br/><br/>
+  <img src="https://github.com/user-attachments/assets/083e6fa6-d28c-4143-95ed-12229c4bd582" alt="architecture2"><br/><br/>
+  <img src="https://github.com/user-attachments/assets/e0d4ee5c-50e1-4579-b72c-4a06a174b9ad" alt="architecture3">
+</p>
 
-## 0802
-1. Git Actions : Build Gradle
-2. Git Actions Workflow Run 완료 후 Docker HUB에 Image Push 확인 완료
-3. Harbor Image Push 확인 완료
-4. EC2에서 K8s 배포 진행 중 
 
-### 참고 자료 
-[Docker & Github Actions with SpringBoot](https://e-room.tistory.com/171)
-[Harbor Image Push](https://m.post.naver.com/viewer/postView.naver?volumeNo=35878696&memberNo=5733062&searchKeyword=json&searchRank=339)
 
-## 0804
-1. 프로젝트 문서 작성
-2. EC2에서 K8s 배포
+## 1. SonarQube
+- [SonarQube 참고1](https://adjh54.tistory.com/381)
+- [SonarQube 참고2](https://techblog.tabling.co.kr/%EA%B8%B0%EC%88%A0%EA%B3%B5%EC%9C%A0-%EC%A0%95%EC%A0%81-%EC%BD%94%EB%93%9C-%EB%B6%84%EC%84%9D-sonarqube-6b59fa9b6b85)
+- [SonarQube 참고3](https://brunch.co.kr/@joypinkgom/207)
+  
 
-## 0805 
-1. 프로젝트 문서 작성 완료
-2. Git Actions Push to Docker Hub & Harbor 성공 시 Slack에 성공 메세지 전송 완료
+### 1-1. Clean Code Attribute
 
-### 참고 자료
-[Slack-Incoming-Webhook](https://velog.io/@king/slack-incoming-webhook)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b488170a-a083-4a45-b342-b549f48d1871" alt="Clean Code Attribute Screenshot">
+</p>
 
-[Git Secret Key - Slack](https://velog.io/@sdb016/Github-actions%EC%99%80-slack-%EC%97%B0%EB%8F%99%ED%95%B4%EC%84%9C-%EC%95%8C%EB%A6%BC%EB%B0%9B%EA%B8%B0)
 
-[프로젝트 Slack](https://app.slack.com/client/T07F1B81KDL/C07FG14EG9Z)
 
-## 0806
-1. Sonarqube & ZAP scanning 진행 중
-2. ArgoCD & Helm 배포 완료
-3. Scale Replicas 실행 시 설정 해둔 파드 수 유지하는거 확인 완료 
+- **Consistency** (일관성)
+   - 코드 스타일, 명명 규칙, 패턴 등이 일관되지 않은 부분
    
-### 참고 자료 
-[ArgoCD & Helm 배포](https://jennifersoft.com/ko/blog/kubernetes/2023-08-30-jennifer-kubernetes-3/)
+- **Intentionality** (의도성)
+   - 의도성 문제는 코드가 무엇을 하는지 논리적으로 명확하지 않거나, 코드의 목적과 사용 의도가 불명확한 부분을 포함
 
-[프로젝트 ArgoCD](https://argocd.cccr-opensource.com/applications?showFavorites=false&proj=&sync=&autoSync=&health=&namespace=&cluster=&labels=)
+- **Adaptability** (적응성)
+   - 코드가 확장이나 재사용 가능한 구조인지 그리고 변화하는 요구 사항이나 환경에 적절하게 대응하지 못하는 부분을 포함
+   
+- **Responsibility** (책임)
+   - 데이터와 사용자의 신뢰를 보장하고 있는지
+ 
+- [SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/clean-code/definition/)
+
+---
+
+### 1-2. Software Quality
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1ff78534-05d2-4d4e-9b93-d7652484b4ae" alt="Software Quality Screenshot">
+</p>
+
+- **Securtiy**
+   - 무단 접근, 사용, 또는 파괴로부터 보호되는 정도입니다. 이는 소프트웨어의 기밀성, 무결성, 가용성을 보장하는 것
+- **Reliability**
+   - 특정 조건 하에서 특정 기간 동안 성능을 유지할 수 있는 능력입니다. 이는 소프트웨어가 예상대로 작동하며 오류가 발생하지 않는 정도
+- **Maintainability**
+   - 코드를 수리, 개선, 이해하기 쉬운 정도를 나타냅니다. 이는 코드의 수정 및 개선이 용이하고, 새로운 기능 추가나 버그 수정을 쉽게 할 수 있는지
+- [SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/clean-code/software-qualities/)
+
+---
+
+### 1-3. Issue Type
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4bab669d-1250-4f86-8c6b-a1070ca66446" alt="Issue Type Image">
+</p>
+
+- **Bug**
+   - Domain: Reliability
+   - 코드가 잘못 작동하게 만들거나 예기치 않은 동작
+   - 반드시 해결해야함
+- **Vulnerability**
+   - Domain: Security
+   - 보안 위험을 초래할 수 있는 문제 - 보안 취약점 
+- **Code Smell**
+   - Domain: Maintainability
+   - 코드의 가독성, 이해도, 유지보수성을 떨어뜨리는 요소
+- [SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/rules/overview/)
+
+---
+
+### 1-4. Issues
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ca8cc26b-c4be-46de-bc50-d4e9b444474d" alt="Issues Screenshot">
+</p>
+
+---
+
+<br/>
+
+## 2. CVE
+- [CVE 개념](https://www.redhat.com/ko/topics/security/what-is-cve)
+- [US Cert](https://www.cisa.gov/news-events/bulletins)
+
+<br/>
+
+---
+
+<br/>
+
+## 3. Trivy 
+### 3-1. Install Trivy
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b5c77b96-df1b-4daa-b0ab-5b0f01ea7e77" alt="Install Trivy Screenshot">
+</p>
+
+---
+
+### 3-2. Image Scan
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/67c9d9d6-806d-4f7f-a2dd-4cc85ded7818" alt="Image Scan Screenshot">
+</p>
+
+---
+
+### 3-3. Column
+
+- **LIBRARY**
+   - 이미지에 포함된 라이브러리나 패키지
+
+- **VULNERABILITY ID**
+   - 취약점 식별 ID
+
+- **SEVERITY**
+   - 심각도
+   - **UNKNOWN** : 심각도를 알 수 없음
+   - **LOW** : 낮은 위험 수준
+   - **MEDIUM** : 중간 위험 수준
+   - **HIGH** : 높은 위험 수준
+   - **CRITICAL** : 매우 높은 위험 수준, 즉시 해결 필요
+
+- **INSTALLED VERSION**
+   - 설치 버전 
+
+- **FIXED VERSION**
+   - 수정된 버전
+
+- **TITLE**
+   - 간단 설명 
+
+<br/>
+
+---
+
+<br/>
+
+
