@@ -9,6 +9,9 @@
 
    ![Screenshot from 2024-08-09 12-27-18](https://github.com/user-attachments/assets/b488170a-a083-4a45-b342-b549f48d1871)"
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b488170a-a083-4a45-b342-b549f48d1871" alt="Clean Code Attribute Screenshot">
+</p>
 
 [SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/clean-code/definition/)
 
