@@ -8,7 +8,9 @@
 <p align="center">
 ![image](https://github.com/user-attachments/assets/e27a23f0-79d2-4b1d-bdc3-9e75349dfaf9)
 </p>
+
 [SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/clean-code/definition/)
+
 - **Consistency** (일관성)
    - 코드 스타일, 명명 규칙, 패턴 등이 일관되지 않은 부분
    
