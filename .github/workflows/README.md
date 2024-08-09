@@ -1,8 +1,9 @@
 # Backend DevSecOps
 
 ## 1. SonarQube
-- [SonarQube 개념1](https://techblog.tabling.co.kr/%EA%B8%B0%EC%88%A0%EA%B3%B5%EC%9C%A0-%EC%A0%95%EC%A0%81-%EC%BD%94%EB%93%9C-%EB%B6%84%EC%84%9D-sonarqube-6b59fa9b6b85)
-- [SonarQube 개념2](https://brunch.co.kr/@joypinkgom/207)
+- [SonarQube 참고1](https://adjh54.tistory.com/381)
+- [SonarQube 참고2](https://techblog.tabling.co.kr/%EA%B8%B0%EC%88%A0%EA%B3%B5%EC%9C%A0-%EC%A0%95%EC%A0%81-%EC%BD%94%EB%93%9C-%EB%B6%84%EC%84%9D-sonarqube-6b59fa9b6b85)
+- [SonarQube 참고3](https://brunch.co.kr/@joypinkgom/207)
   
 
 ### 1-1. Clean Code Attribute
