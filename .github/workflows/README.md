@@ -6,9 +6,9 @@
 
 ### Clean Code Attribute
 
-<div align="center">
-   <img src="![Screenshot from 2024-08-09 12-27-18](https://github.com/user-attachments/assets/b488170a-a083-4a45-b342-b549f48d1871)">
-</div>
+
+   ![Screenshot from 2024-08-09 12-27-18](https://github.com/user-attachments/assets/b488170a-a083-4a45-b342-b549f48d1871)"
+
 
 [SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/clean-code/definition/)
 
@@ -26,9 +26,9 @@
 
 ### Software Quality
 
-<div align="center">
-   <img src="![Screenshot from 2024-08-09 12-29-28](https://github.com/user-attachments/assets/1ff78534-05d2-4d4e-9b93-d7652484b4ae)>
-</div>
+
+   ![Screenshot from 2024-08-09 12-29-28](https://github.com/user-attachments/assets/1ff78534-05d2-4d4e-9b93-d7652484b4ae)
+
 
 [SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/clean-code/software-qualities/)
 
@@ -41,9 +41,9 @@
 
 ### Issue Type
 
-<div align="center">
-   <img src="![image](https://github.com/user-attachments/assets/4bab669d-1250-4f86-8c6b-a1070ca66446)>
-</div>
+
+   ![image](https://github.com/user-attachments/assets/4bab669d-1250-4f86-8c6b-a1070ca66446)
+
 
 - Bug
    - Domain: Reliability
@@ -58,9 +58,9 @@
 
 ### Issues
 
-<div align="center">
+
    ![Screenshot from 2024-08-09 12-19-34](https://github.com/user-attachments/assets/ca8cc26b-c4be-46de-bc50-d4e9b444474d)
-</div>
+
 
 ## CVE
 - [CVE 개념](https://www.redhat.com/ko/topics/security/what-is-cve)
@@ -69,15 +69,15 @@
 ## Trivy 
 ### Install Trivy
 
-<div align="center">
-   <img src="![Screenshot from 2024-08-09 11-33-10](https://github.com/user-attachments/assets/b5c77b96-df1b-4daa-b0ab-5b0f01ea7e77)>
-</div>
+
+   ![Screenshot from 2024-08-09 11-33-10](https://github.com/user-attachments/assets/b5c77b96-df1b-4daa-b0ab-5b0f01ea7e77)
+
 
 ### Image Scan
 
-<div align="center">
-   <img src="![Screenshot from 2024-08-09 11-35-54](https://github.com/user-attachments/assets/67c9d9d6-806d-4f7f-a2dd-4cc85ded7818)>
-</div>
+
+   ![Screenshot from 2024-08-09 11-35-54](https://github.com/user-attachments/assets/67c9d9d6-806d-4f7f-a2dd-4cc85ded7818)
+
 
 ### Column
 - **LIBRARY**
