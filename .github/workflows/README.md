@@ -2,7 +2,7 @@
 
 ## 0. Architecture
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/083e6fa6-d28c-4143-95ed-12229c4bd582" alt="architecture1"><br/>
+  <img src="https://github.com/user-attachments/assets/083e6fa6-d28c-4143-95ed-12229c4bd582" alt="architecture1"><br/><br/>
   <img src="https://github.com/user-attachments/assets/e0d4ee5c-50e1-4579-b72c-4a06a174b9ad" alt="architecture2">
 </p>
 
