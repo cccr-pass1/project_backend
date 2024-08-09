@@ -1,11 +1,11 @@
 # Backend DevSecOps
 
-## SonarQube
+## 1. SonarQube
 - [SonarQube 개념1](https://techblog.tabling.co.kr/%EA%B8%B0%EC%88%A0%EA%B3%B5%EC%9C%A0-%EC%A0%95%EC%A0%81-%EC%BD%94%EB%93%9C-%EB%B6%84%EC%84%9D-sonarqube-6b59fa9b6b85)
 - [SonarQube 개념2](https://brunch.co.kr/@joypinkgom/207)
   
 
-### Clean Code Attribute
+### 1-1. Clean Code Attribute
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b488170a-a083-4a45-b342-b549f48d1871" alt="Clean Code Attribute Screenshot">
@@ -29,7 +29,7 @@
 
 ---
 
-### Software Quality
+### 1-2. Software Quality
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1ff78534-05d2-4d4e-9b93-d7652484b4ae" alt="Software Quality Screenshot">
@@ -44,22 +44,26 @@
 - **Maintainability**
    - 코드를 수리, 개선, 이해하기 쉬운 정도를 나타냅니다. 이는 코드의 수정 및 개선이 용이하고, 새로운 기능 추가나 버그 수정을 쉽게 할 수 있는지
 
-### Issue Type
+---
+
+### 1-3. Issue Type
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4bab669d-1250-4f86-8c6b-a1070ca66446" alt="Issue Type Image">
 </p>
 
-- Bug
+- **Bug**
    - Domain: Reliability
    - 코드가 잘못 작동하게 만들거나 예기치 않은 동작
    - 반드시 해결해야함
-- Vulnerability
+- **Vulnerability**
    - Domain: Security
    - 보안 위험을 초래할 수 있는 문제 - 보안 취약점 
-- Code Smell
+- **Code Smell**
    - Domain: Maintainability
    - 코드의 가독성, 이해도, 유지보수성을 떨어뜨리는 요소
+
+---
 
 ### Issues
 
@@ -67,24 +71,33 @@
   <img src="https://github.com/user-attachments/assets/ca8cc26b-c4be-46de-bc50-d4e9b444474d" alt="Issues Screenshot">
 </p>
 
-## CVE
+---
+
+## 2. CVE
 - [CVE 개념](https://www.redhat.com/ko/topics/security/what-is-cve)
 - [US Cert](https://www.cisa.gov/news-events/bulletins)
 
-## Trivy 
-### Install Trivy
+---
+
+## 3. Trivy 
+### 3-1. Install Trivy
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b5c77b96-df1b-4daa-b0ab-5b0f01ea7e77" alt="Install Trivy Screenshot">
 </p>
 
-### Image Scan
+---
+
+### 3-2. Image Scan
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/67c9d9d6-806d-4f7f-a2dd-4cc85ded7818" alt="Image Scan Screenshot">
 </p>
 
-### Column
+---
+
+### 3-3. Column
+
 - **LIBRARY**
    - 이미지에 포함된 라이브러리나 패키지
 
@@ -107,3 +120,6 @@
 
 - **TITLE**
    - 간단 설명 
+
+---
+
