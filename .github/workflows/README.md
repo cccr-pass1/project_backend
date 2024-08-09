@@ -35,14 +35,13 @@
   <img src="https://github.com/user-attachments/assets/1ff78534-05d2-4d4e-9b93-d7652484b4ae" alt="Software Quality Screenshot">
 </p>
 
-[SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/clean-code/software-qualities/)
-
 - **Securtiy**
    - 무단 접근, 사용, 또는 파괴로부터 보호되는 정도입니다. 이는 소프트웨어의 기밀성, 무결성, 가용성을 보장하는 것
 - **Reliability**
    - 특정 조건 하에서 특정 기간 동안 성능을 유지할 수 있는 능력입니다. 이는 소프트웨어가 예상대로 작동하며 오류가 발생하지 않는 정도
 - **Maintainability**
    - 코드를 수리, 개선, 이해하기 쉬운 정도를 나타냅니다. 이는 코드의 수정 및 개선이 용이하고, 새로운 기능 추가나 버그 수정을 쉽게 할 수 있는지
+- [SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/clean-code/software-qualities/)
 
 ---
 
@@ -62,6 +61,7 @@
 - **Code Smell**
    - Domain: Maintainability
    - 코드의 가독성, 이해도, 유지보수성을 떨어뜨리는 요소
+- [SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/rules/overview/)
 
 ---
 
