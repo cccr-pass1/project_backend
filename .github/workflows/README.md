@@ -75,13 +75,19 @@
 
 
 
+
+
 ## 2. CVE
 - [CVE 개념](https://www.redhat.com/ko/topics/security/what-is-cve)
 - [US Cert](https://www.cisa.gov/news-events/bulletins)
 
 
 
+
+
 ---
+
+
 
 
 
@@ -129,6 +135,10 @@
 
 
 
+
+
 ---
+
+
 
 
