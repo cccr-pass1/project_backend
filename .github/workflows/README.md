@@ -1,41 +1,31 @@
-# Project Backend
+# Backend DevSecOps
 
-## ~ 0801
-1. Backend Build Gradle
-2. Docker Image & Container : Build Gradle
-3. Push Image to Docker HUB
+## CVE
+- [CVE 개념](https://www.redhat.com/ko/topics/security/what-is-cve)
+- [US Cert](https://www.cisa.gov/news-events/bulletins)
 
-## 0802
-1. Git Actions : Build Gradle
-2. Git Actions Workflow Run 완료 후 Docker HUB에 Image Push 확인 완료
-3. Harbor Image Push 확인 완료
-4. EC2에서 K8s 배포 진행 중 
+## Trivy 
+### Install Trivy 
+![Screenshot from 2024-08-09 11-33-10](https://github.com/user-attachments/assets/b5c77b96-df1b-4daa-b0ab-5b0f01ea7e77)
 
-### 참고 자료 
-[Docker & Github Actions with SpringBoot](https://e-room.tistory.com/171)
-[Harbor Image Push](https://m.post.naver.com/viewer/postView.naver?volumeNo=35878696&memberNo=5733062&searchKeyword=json&searchRank=339)
+### Image Scan 
+![Screenshot from 2024-08-09 11-35-54](https://github.com/user-attachments/assets/67c9d9d6-806d-4f7f-a2dd-4cc85ded7818)
 
-## 0804
-1. 프로젝트 문서 작성
-2. EC2에서 K8s 배포
-
-## 0805 
-1. 프로젝트 문서 작성 완료
-2. Git Actions Push to Docker Hub & Harbor 성공 시 Slack에 성공 메세지 전송 완료
-
-### 참고 자료
-[Slack-Incoming-Webhook](https://velog.io/@king/slack-incoming-webhook)
-
-[Git Secret Key - Slack](https://velog.io/@sdb016/Github-actions%EC%99%80-slack-%EC%97%B0%EB%8F%99%ED%95%B4%EC%84%9C-%EC%95%8C%EB%A6%BC%EB%B0%9B%EA%B8%B0)
-
-[프로젝트 Slack](https://app.slack.com/client/T07F1B81KDL/C07FG14EG9Z)
-
-## 0806
-1. Sonarqube & ZAP scanning 진행 중
-2. ArgoCD & Helm 배포 완료
-3. Scale Replicas 실행 시 설정 해둔 파드 수 유지하는거 확인 완료 
-   
-### 참고 자료 
-[ArgoCD & Helm 배포](https://jennifersoft.com/ko/blog/kubernetes/2023-08-30-jennifer-kubernetes-3/)
-
-[프로젝트 ArgoCD](https://argocd.cccr-opensource.com/applications?showFavorites=false&proj=&sync=&autoSync=&health=&namespace=&cluster=&labels=)
+### Column
+**LIBRARY**
+   - 이미지에 포함된 라이브러리나 패키지
+**VULNERABILITY ID**
+   - 취약점 식별 ID
+**SEVERITY**
+   - 심각도
+   - **UNKNOWN** : 심각도를 알 수 없음
+   - **LOW** : 낮은 위험 수준
+   - **MEDIUM** : 중간 위험 수준
+   - **HIGH** : 높은 위험 수준
+   - **CRITICAL** : 매우 높은 위험 수준, 즉시 해결 필요
+**INSTALLED VERSION**
+   - 설치 버전 
+**FIXED VERSION**
+   - 수정된 버전
+**TITLE**
+   - 간단 설명 
