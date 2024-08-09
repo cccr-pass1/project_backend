@@ -14,8 +14,10 @@
 ### Column
 **LIBRARY**
    - 이미지에 포함된 라이브러리나 패키지
+
 **VULNERABILITY ID**
    - 취약점 식별 ID
+
 **SEVERITY**
    - 심각도
    - **UNKNOWN** : 심각도를 알 수 없음
@@ -23,9 +25,12 @@
    - **MEDIUM** : 중간 위험 수준
    - **HIGH** : 높은 위험 수준
    - **CRITICAL** : 매우 높은 위험 수준, 즉시 해결 필요
+
 **INSTALLED VERSION**
    - 설치 버전 
+
 **FIXED VERSION**
    - 수정된 버전
+
 **TITLE**
    - 간단 설명 
