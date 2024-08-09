@@ -5,6 +5,7 @@
 - [SonarQube 개념2](https://brunch.co.kr/@joypinkgom/207)
 
 ### Clean Code Attribute
+
 <p align="center">
 ![image](https://github.com/user-attachments/assets/e27a23f0-79d2-4b1d-bdc3-9e75349dfaf9)
 </p>
