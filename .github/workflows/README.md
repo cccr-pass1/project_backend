@@ -3,6 +3,7 @@
 ## SonarQube
 - [SonarQube 개념1](https://techblog.tabling.co.kr/%EA%B8%B0%EC%88%A0%EA%B3%B5%EC%9C%A0-%EC%A0%95%EC%A0%81-%EC%BD%94%EB%93%9C-%EB%B6%84%EC%84%9D-sonarqube-6b59fa9b6b85)
 - [SonarQube 개념2](https://brunch.co.kr/@joypinkgom/207)
+  
 
 ### Clean Code Attribute
 
@@ -10,7 +11,7 @@
   <img src="https://github.com/user-attachments/assets/b488170a-a083-4a45-b342-b549f48d1871" alt="Clean Code Attribute Screenshot">
 </p>
 
-[SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/clean-code/definition/)
+
 
 - **Consistency** (일관성)
    - 코드 스타일, 명명 규칙, 패턴 등이 일관되지 않은 부분
@@ -23,6 +24,10 @@
    
 - **Responsibility** (책임)
    - 데이터와 사용자의 신뢰를 보장하고 있는지
+ 
+- [SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/clean-code/definition/)
+
+---
 
 ### Software Quality
 
