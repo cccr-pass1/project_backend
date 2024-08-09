@@ -7,7 +7,7 @@
 ### Clean Code Attribute
 
 <p align="center">
-![image](https://github.com/user-attachments/assets/e27a23f0-79d2-4b1d-bdc3-9e75349dfaf9)
+![Screenshot from 2024-08-09 12-27-18](https://github.com/user-attachments/assets/b488170a-a083-4a45-b342-b549f48d1871)
 </p>
 
 [SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/clean-code/definition/)
@@ -26,9 +26,11 @@
 
 ### Software Quality
 <p align="center">
-![image](https://github.com/user-attachments/assets/35cd5c62-2d8b-4902-86f0-f787ab1dc78a)
-[SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/clean-code/software-qualities/)
+![Screenshot from 2024-08-09 12-29-28](https://github.com/user-attachments/assets/1ff78534-05d2-4d4e-9b93-d7652484b4ae)
 </p>
+
+[SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/clean-code/software-qualities/)
+
 - **Securtiy**
    - 무단 접근, 사용, 또는 파괴로부터 보호되는 정도입니다. 이는 소프트웨어의 기밀성, 무결성, 가용성을 보장하는 것
 - **Reliability**
