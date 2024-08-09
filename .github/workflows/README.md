@@ -37,9 +37,9 @@
    - 코드를 수리, 개선, 이해하기 쉬운 정도를 나타냅니다. 이는 코드의 수정 및 개선이 용이하고, 새로운 기능 추가나 버그 수정을 쉽게 할 수 있는지
 
 ### Issue Type
-<p align="center">
+
 ![image](https://github.com/user-attachments/assets/4bab669d-1250-4f86-8c6b-a1070ca66446)
-</p>
+
 - Bug
    - Domain: Reliability
    - 코드가 잘못 작동하게 만들거나 예기치 않은 동작
@@ -52,9 +52,9 @@
    - 코드의 가독성, 이해도, 유지보수성을 떨어뜨리는 요소
 
 ### Issues
-<p align="center">
+
 ![Screenshot from 2024-08-09 12-19-34](https://github.com/user-attachments/assets/ca8cc26b-c4be-46de-bc50-d4e9b444474d)
-</p>
+
 
 ## CVE
 - [CVE 개념](https://www.redhat.com/ko/topics/security/what-is-cve)
@@ -62,13 +62,13 @@
 
 ## Trivy 
 ### Install Trivy
-<p align="center">
+
 ![Screenshot from 2024-08-09 11-33-10](https://github.com/user-attachments/assets/b5c77b96-df1b-4daa-b0ab-5b0f01ea7e77)
-</p>
+
 ### Image Scan
-<p align="center">
+
 ![Screenshot from 2024-08-09 11-35-54](https://github.com/user-attachments/assets/67c9d9d6-806d-4f7f-a2dd-4cc85ded7818)
-</p>
+
 ### Column
 - **LIBRARY**
    - 이미지에 포함된 라이브러리나 패키지
