@@ -1,5 +1,13 @@
 # Backend DevSecOps
 
+## 0. Architecture
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/083e6fa6-d28c-4143-95ed-12229c4bd582" alt="architecture1"><br/>
+  <img src="https://github.com/user-attachments/assets/e0d4ee5c-50e1-4579-b72c-4a06a174b9ad" alt="architecture2">
+</p>
+
+
+
 ## 1. SonarQube
 - [SonarQube 참고1](https://adjh54.tistory.com/381)
 - [SonarQube 참고2](https://techblog.tabling.co.kr/%EA%B8%B0%EC%88%A0%EA%B3%B5%EC%9C%A0-%EC%A0%95%EC%A0%81-%EC%BD%94%EB%93%9C-%EB%B6%84%EC%84%9D-sonarqube-6b59fa9b6b85)
