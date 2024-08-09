@@ -6,9 +6,6 @@
 
 ### Clean Code Attribute
 
-
-   ![Screenshot from 2024-08-09 12-27-18](https://github.com/user-attachments/assets/b488170a-a083-4a45-b342-b549f48d1871)"
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b488170a-a083-4a45-b342-b549f48d1871" alt="Clean Code Attribute Screenshot">
 </p>
@@ -29,9 +26,9 @@
 
 ### Software Quality
 
-
-   ![Screenshot from 2024-08-09 12-29-28](https://github.com/user-attachments/assets/1ff78534-05d2-4d4e-9b93-d7652484b4ae)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1ff78534-05d2-4d4e-9b93-d7652484b4ae" alt="Software Quality Screenshot">
+</p>
 
 [SonarQube Docs](https://docs.sonarsource.com/sonarqube/latest/user-guide/clean-code/software-qualities/)
 
@@ -44,9 +41,9 @@
 
 ### Issue Type
 
-
-   ![image](https://github.com/user-attachments/assets/4bab669d-1250-4f86-8c6b-a1070ca66446)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4bab669d-1250-4f86-8c6b-a1070ca66446" alt="Issue Type Image">
+</p>
 
 - Bug
    - Domain: Reliability
@@ -61,9 +58,9 @@
 
 ### Issues
 
-
-   ![Screenshot from 2024-08-09 12-19-34](https://github.com/user-attachments/assets/ca8cc26b-c4be-46de-bc50-d4e9b444474d)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ca8cc26b-c4be-46de-bc50-d4e9b444474d" alt="Issues Screenshot">
+</p>
 
 ## CVE
 - [CVE 개념](https://www.redhat.com/ko/topics/security/what-is-cve)
@@ -72,15 +69,15 @@
 ## Trivy 
 ### Install Trivy
 
-
-   ![Screenshot from 2024-08-09 11-33-10](https://github.com/user-attachments/assets/b5c77b96-df1b-4daa-b0ab-5b0f01ea7e77)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b5c77b96-df1b-4daa-b0ab-5b0f01ea7e77" alt="Install Trivy Screenshot">
+</p>
 
 ### Image Scan
 
-
-   ![Screenshot from 2024-08-09 11-35-54](https://github.com/user-attachments/assets/67c9d9d6-806d-4f7f-a2dd-4cc85ded7818)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/67c9d9d6-806d-4f7f-a2dd-4cc85ded7818" alt="Image Scan Screenshot">
+</p>
 
 ### Column
 - **LIBRARY**
